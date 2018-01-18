@@ -1,9 +1,10 @@
 /* ### 版面設計 ###*/
 
 body {
-	margin: 24px 10px;
-	font-family: Arial, '微軟正黑體' , sans-serif;
+    margin: 24px auto;
+    font-family: Arial, '微軟正黑體', sans-serif;
 }
+
 
 
 
@@ -12,32 +13,54 @@ body {
 
 /* L-size bigger than 980px; M-size 640~979px; S-size smaller than 639px */
 
-#container {
-	width: 960px;
-	margin: auto;
+
+header {
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 
-header: {
-	margin-bottom: 10px;
-	overflow: hidden;
-}
+
+
+
 
 
 /* overflow:hidden 將多的區塊隱藏，版面比較好看 */
 
 #topnew {
-	margin-bottom: 30px;
-	overflow: hidden;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 
 #oldnews {
-	margin-bottom: 30px;
-	overflow: hidden;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
 
-footer{
-	margin-bottom: 30px;
+#oldnews2 {
+    margin-bottom: 30px;
+    overflow: hidden;
 }
+
+#oldnews3 {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+footer {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -46,15 +69,26 @@ footer{
 /* ### 細節設計 ###*/
 
 
-/* BANNER LOGO */
+/* HEADER LOGO */
 
 #banner {
-	float; left;
+    float: left;
 }
 
 #banner h1 {
-	margin: 0;
+    margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -64,9 +98,21 @@ footer{
 /* container設960，三分法原則，site img 設300-360都蠻好看的 */
 
 #banner img {
-	vertical-align: bottom;
-	width: 332px;
+    vertical-align: bottom;
+    width: 300px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -80,17 +126,21 @@ footer{
 /* padding和margin差異可看講義*/
 
 nav {
-	float: right;
-	font-size: 15px;
-	font-family: 'Lato', sans-serif;
-	padding-top: 30px;
+    float: right;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
 }
 
 
 nav ul {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
+
+
+
 
 
 
@@ -104,9 +154,16 @@ nav ul {
 /* list-style-type: none 可把原本有序列表的點點取消*/
 
 nav li {
-	list-style-type: none;
-	float: left;
+    list-style-type: none;
+    float: left;
 }
+
+
+
+
+
+
+
 
 
 
@@ -145,11 +202,24 @@ nav li a {
 
 
 
+
+
+
 /*  nav li a:hover 當滑鼠在連結文字上徘徊的時候 */
 
 nav li a:hover {
     border-bottom-color: #ff1e97;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -163,13 +233,24 @@ nav li a:hover {
 /* container設960，三分法原則，headerpost設620-660都蠻好看的 */
 
 #topnew img {
-	float: left;
+    float: left;
     vertical-align: bottom;
     width: 620px;
 }
 
 
-/*  TOPNEW LEAD*/
+
+
+
+
+
+
+
+
+
+
+
+/*  HEADERPOST LEAD*/
 
 #topnew #lead {
     float: left;
@@ -180,6 +261,7 @@ nav li a:hover {
 
 #topnew h2 {
     margin: 20px 0;
+    color: #ffffff
 }
 
 #topnew .more {
@@ -189,6 +271,8 @@ nav li a:hover {
 }
 
 
+
+/* 用CSS寫按鈕!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
 
 #topnew .more a {
     color: #ffffff;
@@ -201,6 +285,9 @@ nav li a:hover {
     text-decoration: none;
 }
 
+
+
+/* 用CSS做漸層!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
 
 #topnew {
     background-color: #333333;
@@ -215,7 +302,10 @@ nav li a:hover {
 
 
 
-/* OLDNEWS 圖文 */
+
+
+
+/* POST 圖文 */
 
 
 /* container設960，216x4+32x3=960 */
@@ -237,8 +327,8 @@ nav li a:hover {
 
 /* 每四個為一組的post，右邊界皆為0 */
 
-.post+.post+.post+.post+ {
-    margin-right: 0;post
+.post+.post+.post+.post {
+    margin-right: 0;
 }
 
 
@@ -288,6 +378,30 @@ nav li a:hover {
 .post a:hover {
     background-color: #cfffb2
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -370,13 +484,3 @@ small {
     color: #ffffff;
     margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-
-
